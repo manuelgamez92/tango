@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="3.2220" tests="16" failures="15">
+  <testsuite name="Root Suite" timestamp="2021-02-18T22:56:26" tests="0" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="stock_trades_api_hard" timestamp="2021-02-18T22:56:26" tests="16" file="/Users/manuel/Documents/expressframework/codechallenge/f5969688-f114-4900-a60f-4ea10f196d2b/test/index.spec.js" time="3.2220" failures="15">
+    <testcase name="stock_trades_api_hard should create a new trade of buy type" time="0.0380" classname="should create a new trade of buy type">
+      <failure message="expected { Object (_events, _eventsCount, ...) } to have status code 201 but got 404" type="AssertionError"><![CDATA[AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 201 but got 404
+    at Context.<anonymous> (test/index.spec.js:73:30)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)]]></failure>
+    </testcase>
+    <testcase name="stock_trades_api_hard should create a new trade of sell type" time="0.0240" classname="should create a new trade of sell type">
+      <failure message="expected { Object (_events, _eventsCount, ...) } to have status code 201 but got 404" type="AssertionError"><![CDATA[AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 201 but got 404
+    at Context.<anonymous> (test/index.spec.js:80:30)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)]]></failure>
+    </testcase>
+    <testcase name="stock_trades_api_hard should return 400 if the payload has an invalid type" time="0.0070" classname="should return 400 if the payload has an invalid type">
+      <failure message="expected { Object (_events, _eventsCount, ...) } to have status code 400 but got 404" type="AssertionError"><![CDATA[AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 400 but got 404
+    at Context.<anonymous> (test/index.spec.js:88:30)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)]]></failure>
+    </testcase>
+    <testcase name="stock_trades_api_hard should return 400 if the number of shares exceeds the limit" time="0.0060" classname="should return 400 if the number of shares exceeds the limit">
+      <failure message="expected { Object (_events, _eventsCount, ...) } to have status code 400 but got 404" type="AssertionError"><![CDATA[AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 400 but got 404
+    at Context.<anonymous> (test/index.spec.js:94:30)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)]]></failure>
+    </testcase>
+    <testcase name="stock_trades_api_hard should return 400 if the number of shares is below the limit" time="0.0080" classname="should return 400 if the number of shares is below the limit">
+      <failure message="expected { Object (_events, _eventsCount, ...) } to have status code 400 but got 404" type="AssertionError"><![CDATA[AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 400 but got 404
+    at Context.<anonymous> (test/index.spec.js:100:30)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)]]></failure>
+    </testcase>
+    <testcase name="stock_trades_api_hard should fetch all the trades" time="0.5270" classname="should fetch all the trades">
+      <failure message="expected [ Array(4) ] to deeply equal [ {}, {}, {}, {} ]" type="AssertionError"><![CDATA[AssertionError: expected [ Array(4) ] to deeply equal [ {}, {}, {}, {} ]
+    at Context.<anonymous> (test/index.spec.js:107:30)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)]]></failure>
+    </testcase>
+    <testcase name="stock_trades_api_hard should fetch no trades if the type filter value does not exist" time="0.0900" classname="should fetch no trades if the type filter value does not exist">
+      <failure message="expected [ Array(4) ] to deeply equal []" type="AssertionError"><![CDATA[AssertionError: expected [ Array(4) ] to deeply equal []
+    at Context.<anonymous> (test/index.spec.js:114:30)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)]]></failure>
+    </testcase>
+    <testcase name="stock_trades_api_hard should fetch all trades for a user" time="0.0930" classname="should fetch all trades for a user">
+      <failure message="expected [ Array(4) ] to deeply equal [ {}, {} ]" type="AssertionError"><![CDATA[AssertionError: expected [ Array(4) ] to deeply equal [ {}, {} ]
+    at Context.<anonymous> (test/index.spec.js:121:30)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)]]></failure>
+    </testcase>
+    <testcase name="stock_trades_api_hard should fetch no trades if user filter value does not exist" time="0.0900" classname="should fetch no trades if user filter value does not exist">
+      <failure message="expected [ Array(4) ] to deeply equal []" type="AssertionError"><![CDATA[AssertionError: expected [ Array(4) ] to deeply equal []
+    at Context.<anonymous> (test/index.spec.js:128:30)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)]]></failure>
+    </testcase>
+    <testcase name="stock_trades_api_hard should fetch all buy trades for a user" time="0.0910" classname="should fetch all buy trades for a user">
+      <failure message="expected [ Array(4) ] to deeply equal [ {} ]" type="AssertionError"><![CDATA[AssertionError: expected [ Array(4) ] to deeply equal [ {} ]
+    at Context.<anonymous> (test/index.spec.js:135:30)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)]]></failure>
+    </testcase>
+    <testcase name="stock_trades_api_hard should fetch all sell trades for a user" time="0.1330" classname="should fetch all sell trades for a user">
+      <failure message="expected [ Array(4) ] to deeply equal [ {} ]" type="AssertionError"><![CDATA[AssertionError: expected [ Array(4) ] to deeply equal [ {} ]
+    at Context.<anonymous> (test/index.spec.js:142:30)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)]]></failure>
+    </testcase>
+    <testcase name="stock_trades_api_hard should fetch a single trade" time="2.0030" classname="should fetch a single trade">
+      <failure message="Timeout of 2000ms exceeded. For async tests and hooks, ensure &quot;done()&quot; is called; if returning a Promise, ensure it resolves. (/Users/manuel/Documents/expressframework/codechallenge/f5969688-f114-4900-a60f-4ea10f196d2b/test/index.spec.js)" type="Error"><![CDATA[Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (/Users/manuel/Documents/expressframework/codechallenge/f5969688-f114-4900-a60f-4ea10f196d2b/test/index.spec.js)
+    at listOnTimeout (internal/timers.js:551:17)
+    at processTimers (internal/timers.js:494:7)]]></failure>
+    </testcase>
+    <testcase name="stock_trades_api_hard should get 404 if the trade ID does not exist" time="0.0820" classname="should get 404 if the trade ID does not exist">
+    </testcase>
+    <testcase name="stock_trades_api_hard should get 405 for a put request to /trades/:id" time="0.0130" classname="should get 405 for a put request to /trades/:id">
+      <failure message="expected { Object (_events, _eventsCount, ...) } to have status code 405 but got 404" type="AssertionError"><![CDATA[AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 405 but got 404
+    at Context.<anonymous> (test/index.spec.js:161:30)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)]]></failure>
+    </testcase>
+    <testcase name="stock_trades_api_hard should get 405 for a patch request to /trades/:id" time="0.0080" classname="should get 405 for a patch request to /trades/:id">
+      <failure message="expected { Object (_events, _eventsCount, ...) } to have status code 405 but got 404" type="AssertionError"><![CDATA[AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 405 but got 404
+    at Context.<anonymous> (test/index.spec.js:167:30)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)]]></failure>
+    </testcase>
+    <testcase name="stock_trades_api_hard should get 405 for a delete request to /trades/:id" time="0.0090" classname="should get 405 for a delete request to /trades/:id">
+      <failure message="expected { Object (_events, _eventsCount, ...) } to have status code 405 but got 404" type="AssertionError"><![CDATA[AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 405 but got 404
+    at Context.<anonymous> (test/index.spec.js:173:30)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

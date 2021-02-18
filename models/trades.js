@@ -1,9 +1,16 @@
-// Uncomment the code below to use Sequelize ORM
-// const {Sequelize} = require("sequelize");
-// const sequelize = new Sequelize("sqlite::memory:");
 
-// Uncomment the code below to use Mongoose ORM
-// const mongoose = require('mongoose');
+const mongoose = require('mongoose');
 
+const TradeSchema = new mongoose.Schema({
+    id: Number,
+    type: String,
+    user_id:Number,
+    symbol:String,
+    shares:Number,
+    price:Number,
+    timestamp:Number
+});
 
-// Insert your model definition below
+const Trade = mongoose.model("Trade",TradeSchema);
+
+module.exports =Trade;
